@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain Prediction App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.css">
+</head>
+<body>
+    <div class="weather-box">
+        <div class="head">
+            <h1>Cities Rain Forcast</h1>
+            <p>Hello, Nigerian , Search For Your City's Accurate Rain Prediction</p>
+            <div class="input-box">
+                <input type="text" class="user-input" placeholder="Search">
+                <div class="search" id="search"><i class="fa fa-search"></i></div>
+            </div>  
+            <h2 class="city-name">City name</h2>  
+        </div>
+        <div class="prediction-box">
+            <div>
+                <div>
+                    <div id="date">...</div>
+                    <span> - TODAY</span>
+                </div>
+                <div style="width: 80px;">
+                    <img style="width: 100%;" src="./images/unknown2.jfif" alt="" class="weather-img">
+                </div>
+                <div class="description">...</div>
+                <div id="time"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Website make with </p>
+        <i class="fa fa-heart"></i>
+        <p>by MjpMedia</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

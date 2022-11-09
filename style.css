@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,800;1,100;1,400;1,500&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 120vh;
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-box {
+    padding: 20px 10px;
+    width: 60%;
+    /* margin: 4em auto; */
+    border-radius: 15px;
+    background-color: rgba(5, 5, 5, .8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-self: flex-start;
+}
+
+.weather-box .head h1{
+    font-size: 28px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.weather-box .head h2{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 30px 0 0;
+}
+
+.weather-box .head h1::after{
+    display: block;
+    content: '';
+    margin: 10px auto;
+    width: 40px;
+    height: 2px;
+    background-color: gray;
+}
+
+.weather-box .head p{
+    font-size: 12px;
+    margin: 10px 0 20px;
+    color: #aaa;
+    font-weight: 700;
+}
+
+.input-box{
+    display: flex;
+    height: 40px;
+    gap: 10px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 60px; */
+    height: 40px;
+    border-radius: 25px;
+    padding: 10px 15px;
+    background-color: rgba(105, 105, 105, .4);
+    color: #fff;
+}
+
+.search:hover{
+    background-color: rgba(105, 105, 105, .3);
+}
+
+.weather-box .head input{
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 80%;
+    background-color: rgba(105, 105, 105, .4);
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.prediction-box{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0 10px;
+}
+
+.prediction-box > div{
+    width: 30%;
+    height: 100%;
+    background-color: #aaa;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0 10px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#date, #time{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+span{
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.description{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fa{
+    font-size: 12px;
+}
+
+.footer{
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    gap: 5px;
+}
+
+.footer .fa{
+    color: red;
+}
+
+@media (max-width: 718px){
+    .weather-box {
+        width: 90%;
+    }
+    .weather-box .head h1{
+        font-size: 22px;
+    }
+    
+    .weather-box .head h2{
+        font-size: 16px;
+    }
+    
+    .weather-box .head p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .input-box{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .weather-box .head input{
+        width: 25%;
+        transition: ease-in-out .6s;
+    }
+    .weather-box .head input:hover{
+        width: 80%;
+    }
+    .prediction-box > div{
+        width: 70%;
+        min-height: 15rem;
+    }
+}
