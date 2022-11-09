@@ -17,7 +17,7 @@ function getData() {
         cityName.textContent = userInput
         cityName.style.color = '#fff';
 
-        fetch('http://api.openweathermap.org/data/2.5/forecast?q=' + userInput + '&appid=912eb481fa057004fd44f1032a1a0957')
+        fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + userInput + '&appid=912eb481fa057004fd44f1032a1a0957')
             .then((resp) => resp.json())
             .then((data) => {
                 for (i = 0; i < 5; i++) {
@@ -29,7 +29,7 @@ function getData() {
                     if (data.list[i].weather[0].main === "Rain") {
                         description.innerHTML = "IT WILL RAIN";
                     } else {
-                        description.innerHTML = "WON'T RAIN"
+                        description.innerHTML = "IT WON'T RAIN"
                         myTime.innerHTML = ''
                     }
                 }
